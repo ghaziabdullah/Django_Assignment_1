@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Details About Django</h1>
+    <p>Django is a powerful and widely-used high-level Python web framework that offers a comprehensive set of tools and libraries for building web applications. It follows a pragmatic design philosophy, focusing on code reusability, modularity, and efficiency. Here are some important points about Django:
+
+    </p>
+    <div>
+        <ol>
+            <li>MVC Architecture: Django follows the Model-View-Controller (MVC) architectural pattern, although it refers to it as the Model-View-Template (MVT) pattern. The model handles data storage and retrieval, the view manages the logic for handling requests and rendering responses, and the template is responsible for the presentation layer.</li>
+            <li>Object-Relational Mapping (ORM): Django provides a robust ORM that simplifies database interactions by allowing developers to work with database entities as Python objects. It supports various database backends and provides an intuitive API for querying and manipulating data, reducing the need for writing raw SQL.</li>
+            <li>URL Routing: Django's URL routing system allows developers to map URLs to specific views, making it easy to define and organize URL patterns for different parts of an application. It supports regular expressions and named URL patterns, providing flexibility in URL configuration.</li>
+        </ol>
+    </div>
+
+    <a href="{% url 'myApp:index' %}">Go To Introduction Page</a>
+</div>
+
+{% endblock content %}

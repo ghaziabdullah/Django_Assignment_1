@@ -1,0 +1,60 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>myApp</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    
+    .navbar-custom {
+      background-color: rgb(14, 123, 41);
+      color: white;
+      margin: 100px;
+      margin-bottom: 20;
+    }
+
+    .footer-custom {
+      background-color:rgb(14, 123, 41);
+      color: white;
+      margin: 100px ;
+      padding: 10px;
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+      font: medium;
+      top: 0%;
+    }
+    .image-container{
+      align-self: center;
+      size: 10%;
+      width: min-content;
+      height: min-content;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'header.html' %}
+
+  
+  <!-- Page content -->
+  {% block content %}{% endblock content %}
+
+  <!-- Footer -->
+  {% include 'footer.html' %}
+
+  <!-- Bootstrap JS (required dependencies) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
